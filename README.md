@@ -31,7 +31,7 @@ Yogaworld is a fictional Yoga Studio that provides Yoga classes for the people o
 ### Typography
 + I used Poppins as the main font.
 + ## WireFrame
-I used the Balsamic website to create the wireframe for the SaladBar website. Having decided on the Strategy, Scope and Structure planes, I set about planning its Skeleton and what would become my vision of the Surface Plane.
+I used the Balsamic website to create the wireframe for the yogaworld website. Having decided on the Strategy, Scope and Structure planes, I set about planning its Skeleton and what would become my vision of the Surface Plane.
 * Home Page WireFrame (Windows)
 <p align="center">
 <img src="documentation/balsamiq-home-page.png" width="200"></p>
