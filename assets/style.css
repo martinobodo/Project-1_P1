@@ -1,0 +1,704 @@
+/* style.css */
+
+
+
+/* General resets */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+    position: relative; /* Ensures the nav is positioned relative to the header */
+    text-align: left;
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+/* Logo styling */
+#logo {
+    max-width: 100px; /* Adjust as needed */
+    height: auto;
+}
+
+/* Navigation styling */
+#main-nav {
+    position: absolute;
+    background-color: rgb(248, 242, 242);
+    width: 100%;
+    box-shadow: 0 2px 2px rgb(90, 85, 85);
+    padding: 0 1rem;
+    left: 0;
+    top: 100%; /* Positioning the nav directly below the header */
+    display: none; /* Initially hidden, can be shown via JavaScript or media queries */
+}
+
+#main-nav ul {
+    position: right;
+	list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+	
+}
+
+#main-nav li {
+    margin: 0 15px;
+	
+}
+
+#main-nav a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s;
+}
+
+#main-nav a:hover {
+    background-color: #575757;
+    color: white;
+}
+
+/* Show the nav for demonstration purposes, you can control this with JavaScript */
+header:hover #main-nav {
+    display: block;
+}
+
+/*Nav Toggle Menu*/
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+    padding: 1rem;
+    line-height: 2em;
+    letter-spacing: .3em;
+}
+
+.active {
+    border-bottom: 2px solid rgb(65, 56, 56);
+    background-color: #dad4d5;
+}
+
+h1 {
+    font-family: 'Vollkorn', sans-serif;
+    letter-spacing: 2px;
+    color: #615d5e;
+}
+
+/* Main body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #000000e8;
+    max-width: 2000px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(245, 238, 238);
+    color: #000000e8;
+    margin-top: 85px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.hero-image {
+    background: url(".//images/salad-closeup-612x612.webp") no-repeat center center/cover;
+    height: 10%;
+    position: absolute;
+    width: 100%;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(248, 242, 242);
+    border: 1px solid rgb(245, 238, 238);
+    opacity: 0.6;
+    color: #000000e8;
+    font-weight: bold;
+}
+
+.about-us {
+    background-color: #8080801f;
+    color: #000000e8;
+    text-align: center;
+    padding: 0 1rem;
+    position: relative;
+    margin-top: 350px;
+}
+
+.yoga-logo {
+    font-weight: bold;
+}
+
+/* Images Main Page */
+.local-img,
+.loyalty-img,
+.yogapose-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.img-text {
+	text-align: center;
+	position: relative;
+	top: 55px;
+	left: 556px;
+	transform: translate(-50%, -50%);
+	background-color: rgb(248, 242, 242);
+	border: 1px solid rgb(245, 238, 238);
+	opacity: 0.6;
+	color: #000000e8;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+/*This weeks promotional offer*/
+.promo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #000000e8;
+    padding: 3rem;
+    margin: 0 30px 30px 30px;
+    border: 2px dashed #05040461;
+    background: url(./images/salejunend.gif) center center / cover no-repeat;
+    text-align: center;
+}
+
+.offer-end {
+    font-size: smaller;
+    font-style: italic;
+}
+
+/*Table of opening hours*/
+.open-hours {
+    padding: 0 80px;
+    border: black;
+    font-weight: 500;
+    display: grid;
+    justify-content: center;
+    border: 2px solid #a59b9b61;
+    margin: 0 30px;
+    text-align: center;
+    overflow: hidden;
+}
+
+h4 {
+    background-color: #80808063;
+}
+
+.grid-info-day {
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.6;
+}
+
+/* Footer Style */
+footer {
+    letter-spacing: 1em;
+    font-size: 150%;
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    background-color: #80808029;
+    padding: 15px 15px;
+    flex-wrap: wrap;
+}
+
+.copyrights {
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.socials a {
+    color: #4b3a3d;
+}
+
+/*Styling for Menu page*/
+.menu-page {
+    background-color: #ffc0cb45;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    border: 2px solid #05040461;
+    line-height: 1.50;
+    letter-spacing: 2px;
+    padding: 0 50px;
+    margin-top: 50px;
+}
+
+.menu-page p {
+    background-color: white;
+    text-align: center;
+}
+
+.menu-page h2 {
+    text-align: center;
+}
+
+/*Change triangle icon to plus button for better clarity*/
+details>summary {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+details>summary::before {
+    content: "+";
+    color: #000000e8;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0;
+    margin: 5px 10px 0 0;
+}
+
+details[open] summary::before {
+    content: "-"
+}
+
+.menu-images {
+    display: flex;
+    flex-direction: column;
+}
+
+#yoga-image {
+    margin-top: 25px;
+}
+
+.classes-offer {
+    border: 5px solid grey;
+    border-radius: 20%;
+    margin: 50px;
+    padding: 50px;
+    text-align: center;
+    background-color: #ffc0cb45
+}
+
+/*Styling for thank-you page */
+.thank-you {
+    display: flex;
+    border: 5px solid #808080a8;
+    padding: 3rem;
+    text-align: center;
+    background: url(.//images/salad-closeup-612x612.webp) no-repeat center center / cover;
+}
+
+.ty-message {
+    margin: 30px;
+    background-color: rgb(248, 242, 242);
+    border: 1px solid rgb(245, 238, 238);
+    opacity: 0.6;
+    color: #000000e8;
+    font-weight: bold;
+}
+
+.ty-message h2 p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000e8;
+}
+
+/*Styling for contact us page*/
+.contact-us {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(120deg, rgb(245, 238, 238), #efb1ee59);
+    box-shadow: 10px 10px 15px #808080;
+    margin: 30px;
+    border-radius: 25px;
+}
+
+.required::after {
+    content: "*";
+    color: #ff0000;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+}
+
+.agree {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pers-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#personal-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea {
+    width: 100%;
+}
+
+.found {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    background-color: #59013e;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 1px 6px;
+    margin-top: 15px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.submit {
+    width: 30%;
+}
+
+.studio-map-main h2 {
+    font-size: 20px;
+    background-color: #8080804a;
+}
+
+.studio-map {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid gray;
+    background-color: #8080802e;
+}
+
+.shop-map iframe {
+    height: 100%;
+    width: 100%;
+}
+
+/*Media Query for phones (280px to 330px)*/
+@media screen and (min-width:280px) and (max-width: 330px) {
+    header {
+        align-content: center;
+        flex-wrap: wrap;
+        width: 95%;
+    }
+
+    /*Menu Page */
+    .class-offer {
+        margin: 30px;
+        padding: 30px;
+        height: 150px;
+        width: 150px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .classes-page {
+        margin-top: 0;
+    }
+
+    .studio-map-main h2 {
+        font-size: 18px;
+    }
+
+}
+
+/*Media Query for phones and tablets (345px and up)*/
+@media screen and (min-width: 345px) {
+
+    /*Main Page*/
+    .ashtanga-img,
+    .pregnancy-img,
+    .postnatal-img {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .about-us {
+        margin-top: 350px;
+    }
+
+    /*Menu Page*/
+    .menu-images {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: 0;
+        margin-right: 10px;
+        border: 3px solid gray;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 100px;
+        height: 100px;
+        float: right;
+    }
+
+    .menu-page p {
+        width: 33%;
+    }
+
+    /*Contact Page*/
+    .found {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .shop-map h2 {
+        text-align: center;
+    }
+
+    /*Thank you page*/
+    .thank-you {
+        font-size: 100%;
+        justify-content: center;
+        position: relative;
+    }
+}
+
+/*Media Query for tablets and desktops (768px and up)*/
+@media screen and (min-width: 768px) {
+
+    /*navigation bar*/
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu>li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    /*Main*/
+    header {
+        justify-content: space-between;
+
+    }
+
+    .hero-image {
+        height: 20%;
+    }
+
+    .about-us {
+        padding: 50px 150px 20px;
+        margin-top: 550px;
+    }
+
+    .ashtanga-img,
+    .pregnancy-img,
+    .postnatal-img {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        justify-content: center;
+        width: 350px;
+        height: 350px;
+        border: 2px solid gray;
+        border-radius: 30%;
+        overflow: hidden;
+    }
+
+    .img-container {
+        display: flex;
+        margin-top: 50px;
+        align-items: baseline;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .img-text {
+        position: absolute;
+        border-radius: 25%;
+    }
+
+    #interest-point {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .promo {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+        background: url(./images/sale-gif.gif) 50% 50%;
+    }
+
+    .promo-detail {
+        font-size: 3rem;
+    }
+
+    /*Classes page*/
+    .classes-page {
+        margin-top: 50px;
+        background: linear-gradient(120deg, #ffc0cb45, #efb1ee2e);
+        box-shadow: 10px 10px 15px #80808091;
+        margin: 30px;
+        border-radius: 25px;
+    }
+
+    .classes-page p {
+        width: 33%;
+    }
+
+    .classes-images {
+        position: relative;
+        right: 0;
+        margin-right: 10px;
+        border: 3px solid gray;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 250px;
+        height: 250px;
+        float: right;
+    }
+
+    #yoga-image {
+        margin-top: 100px;
+    }
+
+    #pregnant-image {
+        margin-bottom: 50px;
+    }
+
+    /*Contact-us Page*/
+    .studio-map {
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 0 25% 25%;
+        height: 250px;
+        width: 50%;
+    }
+
+    .studio-map h2 {
+        text-align: center;
+    }
+
+    .message-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-us {
+        margin: 100px 33%;
+    }
+
+    .found {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /*Footer*/
+    footer {
+        letter-spacing: 1em;
+        font-size: 150%;
+        display: flex;
+        justify-content: space-around;
+        height: 40px;
+        background-color: #80808029;
+        padding: 15px 15px;
+    }
+
+    .copyrights {
+        font-size: 15px;
+    }
+
+    /*Thank-you Page*/
+    .thank-you {
+        font-size: 200%;
+        justify-content: center;
+        position: relative;
+    }
+
+}
+
+
+/*Media Query for tablets and desktops (992px and up)*/
+@media screen and (min-width: 992px) {
+
+    /*Nav Header*/
+    #menu a:hover {
+        border-bottom: 1px solid #857f80;
+    }
+
+    /*Main Page*/
+    .img-container {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .ashtanga-img,
+    .pregnancy-img,
+    .postnatal-img {
+        margin: 10px;
+    }
+
+    .promo {
+        background: url(./images/sale-gif.gif) 50% 50%;
+    }
+
+    /*Thank you page*/
+    .thank-you {
+        font-size: 200%;
+        justify-content: center;
+        position: relative;
+    }
+}
+/*Google Fonts*/ 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap')
