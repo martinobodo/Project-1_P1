@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Yogaworld a yoga studio in Jump Barnsley.Yoga classes, Ashtanga, 
+		Pregnancy and Postnatal.">
+    <meta name="keywords" content="Yoga, Ashtanga, Exercise, Pregnancy, Post Natal, healthy">
+    <title>Yogaworld</title>
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="192x192" href="assets/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon/favicon.png">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <!--Navigation Menu-->
+    <header><a href="index.html">
+            <h1>
+				<img src="assets/yogaworld-logo.png" width="270" height="68" alt=""/><i class="fa-solid fa-clipboard"></i></h1>
+        </a>
+        <input type="checkbox" id="nav-toggle" name="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label"><i class="icon-yogi icon-lines"></i></label>
+
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-us">
+            <h1>Contact Us</h1>
+            <div class="contact-form">
+              <form action="thankyou.html" method="get" id="form-info">
+                    <fieldset id="personal-info">
+                        <legend>Personal Information</legend>
+                        <div class="pers-info">
+                            <label for="fname" class="required">First Name</label>
+                            <input type="text" tabindex="0" name="fname" id="fname" required>
+                        </div>
+                        <div class="pers-info">
+                            <label for="lname" class="required">Last Name</label>
+                            <input type="text" tabindex="0" name="lname" id="lname" required>
+                        </div>
+                        <div class="pers-info">
+                            <label for="email" class="required">Email Address</label>
+                            <input type="email" tabindex="0" name="email" id="email" required autocomplete="off">
+                        </div>
+                        <div class="message-form">
+                            <label for="message-form">Add your message here</label>
+                            <textarea rows="6" cols="50" maxlength="500" tabindex="0" id="message-form"
+                                name="message-form"></textarea>
+                        </div>
+                    </fieldset>
+                    <div class="agree">
+
+                        <input type="checkbox" tabindex="0" id="agree" name="agree" required>
+                        <label for="agree">I agree to the Terms & Conditions</label>
+
+                    </div>
+              </form>
+
+
+                <div class="found">
+
+                    <p>Let us know how you heard about us!</p>
+                    <select name="found" id="found" aria-label="how did you hear about us">
+                        <option value="choose" selected>Choose One</option>
+                        <option value="google">Google</option>
+                        <option value="radio">Radio</option>
+                        <option value="social">Social Media</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="submit">
+                <button type="submit" form="form-info" tabindex="0">Submit</button>
+            </div>
+      </div>
+        <div class="shop-map">
+            <h2>Directions to Yogaworld<i class="fa-solid fa-leaf"></i></h2>
+            <iframe title="googleMap"
+                src="https://maps.app.goo.gl/vcDhwbv1Ka2JhVeP9"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+</main>
+    <footer>
+        <div class="copyrights">Yogaworld<i class="icon-yogi icon-pose"> &copy; 2024</i></div>
+        <div class="socials">
+            <a href="https://www.facebook.com/login/" target="_blank" rel="noopener"
+                aria-label="Visit our Facebook Page(opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                aria-label="Join us on Instagram(opens in a new tab)"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                aria-label="See our Youtube Channel(opens in a new tab)"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+    
+</body>
+
+
+</html>
