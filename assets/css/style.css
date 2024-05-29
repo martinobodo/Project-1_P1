@@ -1,91 +1,97 @@
 /* style.css */
-
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
 
 body,
- .btn {
-    font-weight:400;
+.btn {
+    font-weight: 400;
     font-family: 'merriweather', serif;
     letter-spacing: 1px;
 }
 
-
-.masthead {
-    min-height: 60vh;
-    position: relative;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+.required {
+    color: red;
 }
 
 /* General resets */
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
-    font-family: 'merriweather',regular;
-    font-size: 18pt
+    font-family: 'merriweather', regular;
+    font-size: 14pt
 }
 
 /* Header styling */
+.header-nav-header {
+    width: 100%;
+    height: 60px;
+    background-color: green;
+
+}
+
 header {
-    position: center; 
+    position: center;
     text-align: center;
     background-color: rgb(245, 180, 60);
     padding: 20px 0;
     border-bottom: 1px solid #02b10b;
 }
-.wavbar ul{
-    list-style-type:none;
+
+.wavbar ul {
+    list-style-type: none;
     background-color: green;
     padding: 0px;
     overflow: hidden;
-    
+
 }
+
 .wavbar {
     list-style-type: none;
     background-color: green;
-    padding: 0px; 
+    padding: 0px;
     margin: 0px;
     float: center;
-    
-    
+
+
 }
 
-.wavbar a{
+.wavbar a {
     color: #ffffff;
     text-decoration: none;
     padding: 15px;
     display: block;
     text-align: center;
-    
+
 }
-.wavbar a:hover{
+
+.wavbar a:hover {
     background-color: #5e8f5c61;
-   
-    
+
+
 }
 
-.wavbar li{
+.wavbar li {
     float: left;
-   
-    
+
+
 }
 
-.navbar ul{
+.navbar ul {
     list-style-type: none;
     background-color: green;
     padding: 0px;
     margin: 0px;
-    font-size: 18pt
+    font-size: 14pt
 }
 
 /* Logo styling */
 #logo {
-    max-width: 100px; /* Adjust as needed */
+    max-width: 100px;
+    /* Adjust as needed */
     height: auto;
 }
 
@@ -97,24 +103,25 @@ header {
     box-shadow: 0 2px 2px rgb(224, 168, 63);
     padding: 0 1rem;
     left: 0;
-    top: 100%; /* Positioning the nav directly below the header */
-    display: none; /* Initially hidden, can be shown via JavaScript or media queries */
+    top: 100%;
+    /* Positioning the nav directly below the header */
+    display: none;
+    /* Initially hidden, can be shown via JavaScript or media queries */
 }
 
 #main-nav ul {
     position: left;
-	list-style-type: none;
+    list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
-    font-size: 18pt
-	
+    font-size: 14pt
 }
 
 #main-nav li {
     margin: 0 15px;
-	
+
 }
 
 #main-nav a {
@@ -154,7 +161,7 @@ ul {
     padding: 1rem;
     line-height: 2em;
     letter-spacing: .3em;
-    font-size: 18pt;
+    font-size: 14pt;
 }
 
 .active {
@@ -177,43 +184,25 @@ main {
     position: relative;
     width: 100%;
     height: 100%;
-    
+
     background-color: rgb(245, 180, 60);
     color: #1d8526e8;
     margin-top: 85px;
     overflow: auto;
     overflow-x: hidden;
-    font-size: 28pt;
+    font-size: 14pt;
 }
+
 img {
     max-width: 100%;
     max-height: 100%;
 }
+
 .yogalady {
     width: 1200px;
     length: 800px;
 }
 
-.hero-image {
-    background: url(".//images/yogapose-lady1.jpg") no-repeat center center/cover;
-    height: 10%;
-    position: absolute;
-    width: 100%;
-    background-color: rgb(245, 180, 60);
-}
-
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(55, 221, 14);
-    border: 1px solid rgb(32, 207, 90);
-    opacity: 0.6;
-    color: #35c470e8;
-    font-weight: bold;
-}
 
 .about-us {
     background-color: #a32c7b8e;
@@ -237,30 +226,30 @@ img {
 }
 
 .img-text {
-	text-align: center;
-	position: relative;
-	top: 55px;
-	left: 556px;
-	transform: translate(-50%, -50%);
-	background-color: rgb(26, 185, 21);
-	border: 1px solid rgb(6, 150, 6);
-	opacity: 0.6;
-	color: #13aa39e8;
-	font-weight: bold;
-	font-size: 2rem;
+    text-align: center;
+    position: relative;
+    top: 55px;
+    left: 556px;
+    transform: translate(-50%, -50%);
+    background-color: rgb(26, 185, 21);
+    border: 1px solid rgb(6, 150, 6);
+    opacity: 0.6;
+    color: #13aa39e8;
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 /*This weeks promotional offer*/
 .promo {
     display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        color: #000000e8;
-        padding: 3rem;
-        margin: 0 30px 30px 30px;
-        border: 2px dashed #05040461;
-        background: url(/assets/images/sale-gif.gif) 50% 50%;
-        text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #000000e8;
+    padding: 3rem;
+    margin: 0 30px 30px 30px;
+    border: 2px dashed #05040461;
+    background: url(/assets/images/sale-gif.gif) 50% 50%;
+    text-align: center;
 }
 
 .offer-end {
@@ -273,7 +262,7 @@ img {
     padding: 0 80px;
     border: black;
     font-weight: 500;
-    font-size: 28pt;
+    font-size: 14pt;
     display: grid;
     justify-content: center;
     border: 2px solid #2aac1061;
@@ -379,7 +368,7 @@ details[open] summary::before {
     border: 5px solid #808080a8;
     padding: 3rem;
     text-align: center;
-    background: url(.//images/salad-closeup-612x612.webp) no-repeat center center / cover;
+    background: url(/assets/images/yogapose-lady1-600.jpg) no-repeat center center / cover;
 }
 
 .ty-message {
@@ -402,7 +391,9 @@ details[open] summary::before {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(120deg, rgb(245, 238, 238), #efb1ee59);
+
+    background: linear-gradient(120deg, rgba(169, 224, 164, 0.514), #b3690921);
+
     box-shadow: 10px 10px 15px #808080;
     margin: 30px;
     border-radius: 25px;
@@ -425,6 +416,8 @@ details[open] summary::before {
     width: 100%;
     display: flex;
     justify-content: center;
+    color: red;
+
 }
 
 .pers-info {
@@ -577,9 +570,11 @@ button {
         padding-right: 1rem;
         overflow: hidden;
     }
-     .navbar li {
+
+    .navbar li {
         float: left;
-     }
+    }
+
     #menu {
         display: flex;
     }
@@ -758,8 +753,8 @@ button {
     /*Nav Header*/
     #menu a:hover {
         border-bottom: 1px solid #857f80;
-        font-size: 18pt;
-        
+        font-size: 14pt;
+
     }
 
     /*Main Page*/
@@ -795,5 +790,6 @@ button {
         position: relative;
     }
 }
-/*Google Fonts*/ 
+
+/*Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap')

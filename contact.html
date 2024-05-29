@@ -18,9 +18,12 @@
 <body>
     <!--Navigation Menu-->
     <header>
+        <a href="index.html">
+            <h1><img src="/assets/images/yogaworld-logo-brown.png" width="270" height="68" alt=""/></h1>
+            </a>
         <input type="checkbox" id="nav-toggle" name="nav-toggle">
         <label for="nav-toggle" class="nav-toggle-label"><i class="icon-yogi icon-lines"></i></label>
-        <h2> <img src="assets/images/yogaworld-logo-brown.png" width="270" height="68" alt="" /> </h2>
+        
         <nav class="wavbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -60,7 +63,10 @@
                     <div class="agree">
 
                         <input type="checkbox" tabindex="0" id="agree" name="agree" required>
-                        <label for="agree">I agree to the Terms & Conditions</label>
+                        <label for="agree">I agree to the Terms & Conditions<span class="required::after">*</span></label>
+                        
+
+                        
 
                     </div>
                 </form>
@@ -95,17 +101,18 @@
         <style>
             footer {
                 position: relative;
-                height: 50px;
+                height: 100px;
                 width: 100%;
                 background-color: #e284367e;
             }
             p.copyright {
                 position: absolute;
                 width: 100%;
-                color: #4bc213d5;
+                color: #000000d5;
                 line-height: 40px;
-                font-size: 28pt;
+                font-size: 16pt;
                 font-weight: bold;
+                font-family: poppins;
                 text-align: center;
                 bottom: 0;
             }
