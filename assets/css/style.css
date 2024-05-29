@@ -1,21 +1,86 @@
 /* style.css */
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
 
+body,
+ .btn {
+    font-weight:400;
+    font-family: 'merriweather', serif;
+    letter-spacing: 1px;
+}
+
+
+.masthead {
+    min-height: 60vh;
+    position: relative;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
 
 /* General resets */
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'merriweather',regular;
+    font-size: 18pt
 }
 
 /* Header styling */
 header {
-    position: relative; /* Ensures the nav is positioned relative to the header */
-    text-align: left;
-    background-color: #f8f8f8;
+    position: center; 
+    text-align: center;
+    background-color: rgb(245, 180, 60);
     padding: 20px 0;
-    border-bottom: 1px solid #e7e7e7;
+    border-bottom: 1px solid #02b10b;
+}
+.wavbar ul{
+    list-style-type:none;
+    background-color: green;
+    padding: 0px;
+    overflow: hidden;
+    
+}
+.wavbar {
+    list-style-type: none;
+    background-color: green;
+    padding: 0px; 
+    margin: 0px;
+    float: center;
+    
+    
+}
+
+.wavbar a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    
+}
+.wavbar a:hover{
+    background-color: #5e8f5c61;
+   
+    
+}
+
+.wavbar li{
+    float: left;
+   
+    
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: green;
+    padding: 0px;
+    margin: 0px;
+    font-size: 18pt
 }
 
 /* Logo styling */
@@ -27,9 +92,9 @@ header {
 /* Navigation styling */
 #main-nav {
     position: absolute;
-    background-color: rgb(248, 242, 242);
+    background-color: rgb(245, 180, 60);
     width: 100%;
-    box-shadow: 0 2px 2px rgb(90, 85, 85);
+    box-shadow: 0 2px 2px rgb(224, 168, 63);
     padding: 0 1rem;
     left: 0;
     top: 100%; /* Positioning the nav directly below the header */
@@ -37,12 +102,13 @@ header {
 }
 
 #main-nav ul {
-    position: right;
+    position: left;
 	list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
+    font-size: 18pt
 	
 }
 
@@ -55,13 +121,13 @@ header {
     display: block;
     padding: 10px 15px;
     text-decoration: none;
-    color: black;
+    color: rgb(186, 233, 57);
     transition: background-color 0.3s;
 }
 
 #main-nav a:hover {
-    background-color: #575757;
-    color: white;
+    background-color: #dbf113;
+    color: rgb(11, 175, 25);
 }
 
 /* Show the nav for demonstration purposes, you can control this with JavaScript */
@@ -88,48 +154,52 @@ ul {
     padding: 1rem;
     line-height: 2em;
     letter-spacing: .3em;
+    font-size: 18pt;
 }
 
 .active {
     border-bottom: 2px solid rgb(65, 56, 56);
-    background-color: #dad4d5;
+    background-color: #91ee85;
 }
 
 h1 {
-    font-family: 'Vollkorn', sans-serif;
+    font-family: 'merriweather', sans-serif;
+    font-size: 18px;
     letter-spacing: 2px;
-    color: #615d5e;
+    color: #0d9445;
+    background-color: rgb(245, 180, 60);
 }
 
 /* Main body Styles */
-body {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    color: #000000e8;
-    max-width: 2000px;
-    margin: 0 auto;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+
 
 main {
     position: relative;
     width: 100%;
     height: 100%;
-    background-color: rgb(245, 238, 238);
-    color: #000000e8;
+    
+    background-color: rgb(245, 180, 60);
+    color: #1d8526e8;
     margin-top: 85px;
     overflow: auto;
     overflow-x: hidden;
+    font-size: 28pt;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.yogalady {
+    width: 1200px;
+    length: 800px;
 }
 
 .hero-image {
-    background: url(".//images/salad-closeup-612x612.webp") no-repeat center center/cover;
+    background: url(".//images/yogapose-lady1.jpg") no-repeat center center/cover;
     height: 10%;
     position: absolute;
     width: 100%;
+    background-color: rgb(245, 180, 60);
 }
 
 .hero-text {
@@ -138,20 +208,20 @@ main {
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(248, 242, 242);
-    border: 1px solid rgb(245, 238, 238);
+    background-color: rgb(55, 221, 14);
+    border: 1px solid rgb(32, 207, 90);
     opacity: 0.6;
-    color: #000000e8;
+    color: #35c470e8;
     font-weight: bold;
 }
 
 .about-us {
-    background-color: #8080801f;
+    background-color: #a32c7b8e;
     color: #000000e8;
     text-align: center;
     padding: 0 1rem;
     position: relative;
-    margin-top: 350px;
+    margin-top: 50px;
 }
 
 .yoga-logo {
@@ -159,8 +229,7 @@ main {
 }
 
 /* Images Main Page */
-.local-img,
-.loyalty-img,
+
 .yogapose-img {
     display: flex;
     flex-wrap: wrap;
@@ -173,10 +242,10 @@ main {
 	top: 55px;
 	left: 556px;
 	transform: translate(-50%, -50%);
-	background-color: rgb(248, 242, 242);
-	border: 1px solid rgb(245, 238, 238);
+	background-color: rgb(26, 185, 21);
+	border: 1px solid rgb(6, 150, 6);
 	opacity: 0.6;
-	color: #000000e8;
+	color: #13aa39e8;
 	font-weight: bold;
 	font-size: 2rem;
 }
@@ -184,14 +253,14 @@ main {
 /*This weeks promotional offer*/
 .promo {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    color: #000000e8;
-    padding: 3rem;
-    margin: 0 30px 30px 30px;
-    border: 2px dashed #05040461;
-    background: url(./images/salejunend.gif) center center / cover no-repeat;
-    text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: #000000e8;
+        padding: 3rem;
+        margin: 0 30px 30px 30px;
+        border: 2px dashed #05040461;
+        background: url(/assets/images/sale-gif.gif) 50% 50%;
+        text-align: center;
 }
 
 .offer-end {
@@ -204,16 +273,17 @@ main {
     padding: 0 80px;
     border: black;
     font-weight: 500;
+    font-size: 28pt;
     display: grid;
     justify-content: center;
-    border: 2px solid #a59b9b61;
+    border: 2px solid #2aac1061;
     margin: 0 30px;
     text-align: center;
     overflow: hidden;
 }
 
 h4 {
-    background-color: #80808063;
+    background-color: #09b32e63;
 }
 
 .grid-info-day {
@@ -229,7 +299,7 @@ footer {
     display: flex;
     justify-content: space-around;
     height: 40px;
-    background-color: #80808029;
+    background-color: #4bc213d5;
     padding: 15px 15px;
     flex-wrap: wrap;
 }
@@ -241,16 +311,16 @@ footer {
 }
 
 .socials a {
-    color: #4b3a3d;
+    color: #c71939;
 }
 
 /*Styling for Menu page*/
 .menu-page {
-    background-color: #ffc0cb45;
+    background-color: #20af0dcb;
     display: flex;
     flex-grow: 1;
     flex-direction: column;
-    border: 2px solid #05040461;
+    border: 2px solid #0aac33b9;
     line-height: 1.50;
     letter-spacing: 2px;
     padding: 0 50px;
@@ -258,7 +328,7 @@ footer {
 }
 
 .menu-page p {
-    background-color: white;
+    background-color: rgba(20, 202, 65, 0.651);
     text-align: center;
 }
 
@@ -274,7 +344,7 @@ details>summary {
 
 details>summary::before {
     content: "+";
-    color: #000000e8;
+    color: #117e0ee8;
     font-size: 1.5em;
     font-weight: bold;
     padding: 0;
@@ -396,7 +466,7 @@ button {
 }
 
 .studio-map-main h2 {
-    font-size: 20px;
+    font-size: 28pt;
     background-color: #8080804a;
 }
 
@@ -501,12 +571,15 @@ button {
     /*navigation bar*/
     nav {
         display: block;
-        position: relative;
+        position: left;
         box-shadow: none;
         width: fit-content;
         padding-right: 1rem;
+        overflow: hidden;
     }
-
+     .navbar li {
+        float: left;
+     }
     #menu {
         display: flex;
     }
@@ -517,17 +590,16 @@ button {
 
     .nav-toggle-label {
         display: none;
+        font-size: 28pt;
     }
 
     /*Main*/
     header {
         justify-content: space-between;
+        background-color: rgb(245, 180, 60);
 
     }
 
-    .hero-image {
-        height: 20%;
-    }
 
     .about-us {
         padding: 50px 150px 20px;
@@ -573,14 +645,26 @@ button {
     .promo {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 5%;
-        background: url(./images/sale-gif.gif) 50% 50%;
+        justify-content: center;
+        color: #000000e8;
+        padding: 3rem;
+        margin: 0 30px 30px 30px;
+        border: 2px dashed #05040461;
+        background: url(/assets/images/sale-gif.gif) 50% 50%;
+        text-align: center;
     }
 
     .promo-detail {
         font-size: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: #000000e8;
+        padding: 3rem;
+        margin: 0 30px 30px 30px;
+        border: 2px dashed #05040461;
+        background: url(./assets/sale-gif.gif) 50% 50%;
+        text-align: center;
     }
 
     /*Classes page*/
@@ -674,6 +758,8 @@ button {
     /*Nav Header*/
     #menu a:hover {
         border-bottom: 1px solid #857f80;
+        font-size: 18pt;
+        
     }
 
     /*Main Page*/
@@ -681,6 +767,7 @@ button {
         flex-direction: row;
         width: 100%;
         justify-content: space-around;
+        background-color: rgb(245, 180, 60);
     }
 
     .ashtanga-img,
@@ -690,7 +777,15 @@ button {
     }
 
     .promo {
-        background: url(./images/sale-gif.gif) 50% 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: #000000e8;
+        padding: 3rem;
+        margin: 0 30px 30px 30px;
+        border: 2px dashed #05040461;
+        background: url(./assets/sale-gif.gif) 50% 50%;
+        text-align: center;
     }
 
     /*Thank you page*/
