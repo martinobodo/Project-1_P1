@@ -13,29 +13,35 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/android-chrome-512x512.png">
     <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicons/favicon.png">
-    <link rel="stylesheet" href="assets/css/style.css" </head>
+    <link rel="stylesheet" href="assets/css/style.css" 
+</head>
 
 <body>
     <!--Navigation Menu-->
     <header>
-        <a href="index.html">
-            <h1><img src="/assets/images/yogaworld-logo-brown.png" width="270" height="68" alt=""/></h1>
+        <div class="navbar">
+            <a href="index.html" class="audio-link">
+                <audio controls src="/assets/audio/yogaworld-motto.mp3" aria-label="Yoga World Motto"></audio>
             </a>
-        <input type="checkbox" id="nav-toggle" name="nav-toggle">
-        <label for="nav-toggle" class="nav-toggle-label"><i class="icon-yogi icon-lines"></i></label>
-        
-        <nav class="wavbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="classes.html">Classes</a></li>
-                <li><a href="contact.html">Contact</a></li>
-
-            </ul>
-
-        </nav>
+            <h2>
+                <img src="assets/images/yogaworld-logo-brown.png" width="270" height="68" alt="Yoga World Logo">
+            </h2>
+            <nav class="nav-menu">
+                <button class="menu-toggle" aria-label="Toggle navigation menu">
+                    ☰
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <h1> <center>Please fill in the form to let us know which class you would like to book </center></h1>
+        <h1>
+            <center>Please fill in the form to let us know which class you would like to book </center>
+        </h1>
         <div class="contact-us">
             <h1>Contact Us</h1>
             <div class="contact-form">
@@ -63,10 +69,11 @@
                     <div class="agree">
 
                         <input type="checkbox" tabindex="0" id="agree" name="agree" required>
-                        <label for="agree">I agree to the Terms & Conditions<span class="required::after">*</span></label>
-                        
+                        <label for="agree">I agree to the Terms & Conditions<span
+                                class="required::after">*</span></label>
 
-                        
+
+
 
                     </div>
                 </form>
@@ -90,14 +97,25 @@
         </div>
         <div class="shop-map">
             <h2>Directions to Yogaworld, Yoga Studio located in the village of Jump, Barnsley, South Yorkshire</h2>
-                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9491.30232777914!2d-1.4389598242460493!3d53.50731105738013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48797081131ad5ed%3A0xcefa7886e910cba3!2sJump%2C%20Barnsley!5e0!3m2!1sen!2suk!4v1716925605489!5m2!1sen!2suk"
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+            <p><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9491.30232777914!2d-1.4389598242460493!3d53.50731105738013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48797081131ad5ed%3A0xcefa7886e910cba3!2sJump%2C%20Barnsley!5e0!3m2!1sen!2suk!4v1716925605489!5m2!1sen!2suk"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe></p>
         </div>
     </main>
     <footer>
-        <img src="/assets/images/facebook-48.png" width="48" height="44" alt="" />
-        <img src="/assets/images/instagram-48.png" width="48" height="44" alt="" />
-        <img src="/assets/images/youtube-48.png" width="48" height="44" alt="" />
+        <a href="https://www.facebook.com">
+            <h1><img src="/assets/images/facebook-48.png" width="48" height="44" alt="" /></h1>
+        </a>
+        <a href="https://www.instagram.com">
+            <h1><img src="/assets/images/instagram-48.png" width="48" height="44" alt="" /></h1>
+        </a>
+        <a href="https://www.youtube.com">
+            <h1><img src="/assets/images/youtube-48.png" width="48" height="44" alt="" /></h1>
+        </a>
+
+
+
         <style>
             footer {
                 position: relative;
@@ -105,6 +123,7 @@
                 width: 100%;
                 background-color: #e284367e;
             }
+
             p.copyright {
                 position: absolute;
                 width: 100%;

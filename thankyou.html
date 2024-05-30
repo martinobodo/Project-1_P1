@@ -20,20 +20,24 @@
 <body>
     <!--Navigation Menu-->
     <header>
-        <a href="index.html">
-        <h1><img src="/assets/images/yogaworld-logo-brown.png" width="270" height="68" alt=""/></h1>
-        </a>
-        
-        
-        <nav class ="wavbar">
-            <ul>
-                 <li><a href= "index.html">Home</a></li>
-                 <li><a href="classes.html">Classes</a></li>
-                 <li><a href= "contact.html">Contact</a></li>
-    
-            </ul>
-    
-        </nav>
+        <div class="navbar">
+            <a href="index.html" class="audio-link">
+                <audio controls src="/assets/audio/yogaworld-motto.mp3" aria-label="Yoga World Motto"></audio>
+            </a>
+            <h2>
+                <img src="assets/images/yogaworld-logo-brown.png" width="270" height="68" alt="Yoga World Logo">
+            </h2>
+            <nav class="nav-menu">
+                <button class="menu-toggle" aria-label="Toggle navigation menu">
+                    ☰
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <div class="thank-you">
@@ -48,9 +52,15 @@
       </div>
 </main>
 <footer>
-    <img src="/assets/images/facebook-48.png" width="48" height="44" alt="" />
-    <img src="/assets/images/instagram-48.png" width="48" height="44" alt="" />
-    <img src="/assets/images/youtube-48.png" width="48" height="44" alt="" />
+    <a href="https://www.facebook.com">
+        <h1><img src="/assets/images/facebook-48.png" width="48" height="44" alt="" /></h1>
+    </a>
+    <a href="https://www.instagram.com">
+        <h1><img src="/assets/images/instagram-48.png" width="48" height="44" alt="" /></h1>
+    </a>
+    <a href="https://www.youtube.com">
+        <h1><img src="/assets/images/youtube-48.png" width="48" height="44" alt="" /></h1>
+    </a>
     <style>
         footer {
             position: relative;
@@ -61,10 +71,11 @@
         p.copyright {
             position: absolute;
             width: 100%;
-            color: #4bc213d5;
+            color: #000000d5;
             line-height: 40px;
-            font-size: 8pt;
+            font-size: 16pt;
             font-weight: bold;
+            font-family: poppins;
             text-align: center;
             bottom: 0;
         }
