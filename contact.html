@@ -14,6 +14,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/android-chrome-512x512.png">
     <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicons/favicon.png">
     <link rel="stylesheet" href="assets/css/style.css" 
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -33,7 +34,7 @@
                 <ul class="nav-list">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="classes.html">Classes</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -69,8 +70,7 @@
                     <div class="agree">
 
                         <input type="checkbox" tabindex="0" id="agree" name="agree" required>
-                        <label for="agree">I agree to the Terms & Conditions<span
-                                class="required::after">*</span></label>
+                        <label for="agree">I agree to the Terms & Conditions<span class="required"></span></label>
 
 
 
@@ -104,26 +104,34 @@
         </div>
     </main>
     <footer>
+        <p> Copyright Yogaworld 2024 </p>
         <a href="https://www.facebook.com">
-            <h1><img src="/assets/images/facebook-48.png" width="48" height="44" alt="" /></h1>
+            <img src="/assets/images/facebook-48.png" width="48" height="44" alt="Facebook">
         </a>
         <a href="https://www.instagram.com">
-            <h1><img src="/assets/images/instagram-48.png" width="48" height="44" alt="" /></h1>
+            <img src="/assets/images/instagram-48.png" width="48" height="44" alt="Instagram">
         </a>
         <a href="https://www.youtube.com">
-            <h1><img src="/assets/images/youtube-48.png" width="48" height="44" alt="" /></h1>
+            <img src="/assets/images/youtube-48.png" width="48" height="44" alt="Youtube">
         </a>
-
-
-
+    
         <style>
             footer {
                 position: relative;
                 height: 100px;
                 width: 100%;
                 background-color: #e284367e;
+                display: flex; /* Add flex display for better alignment */
+                justify-content: center; /* Center align the icons */
+                align-items: center; /* Vertically align the icons */
+                padding: 10px; /* Add padding for better spacing */
             }
-
+    
+            footer a {
+                display: inline-block; /* Ensure the anchor tags are clickable */
+                margin: 0 10px; /* Add margin for spacing between icons */
+            }
+    
             p.copyright {
                 position: absolute;
                 width: 100%;
@@ -136,7 +144,6 @@
                 bottom: 0;
             }
         </style>
-        <p class="copyright">© YOGAWORLD 2024</p>
     </footer>
 
 </body>
