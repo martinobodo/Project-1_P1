@@ -32,6 +32,21 @@ html {
     background-color: green;
 
 }
+.header-nav-header-logo {
+    width: 120px;
+    height: 100%;
+    background-color: rgb(238, 241, 26);
+}
+.header-nav-header-nav {
+    width: 120px;
+    height: 100%;
+    background-color: rgb(26, 65, 241);
+}
+.header-nav-header-sm {
+    width: 120px;
+    height: 100%;
+    background-color: rgb(201, 4, 4);
+}
 
 header {
     position: center;
