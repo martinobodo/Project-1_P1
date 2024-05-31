@@ -113,19 +113,25 @@ The website has been tested on Google Chrome, Safari and Firefox and all rendere
   ## Validator Testing
   * HTML
   * 43 errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/#textarea)
-![HTML Validation](<documentation/HTML Validator.png>)
+
 
   * CSS
     * 8 errors were returned when passing through the official [Jigsaw validator](https://jigsaw.w3.org/css-validator/)
-![alt text](documentation/jigsaw-validation.png)
+
 
   * Lighthouse
     Lighthouse scores were high on SEO but fell short on other areas
+    
      Lighthouse on the index.html scored the website 65 for Performance, 82 for Accessibility, 89 For best practices and 100 for SEO
+    
     <img src="documentation/lighthouse-result-index.png" width="200"></p>
+    
     Lighthouse on the classes.html scored the website 92 for Performance, 87 for Accessibility, 89 For best practices and 100 for SEO
+    
     <img src="documentation/lighthouse-result-classes.png" width="200"></p>
+    
     Lighthouse on the contact.html scored the website 93 for Performance, 85 for Accessibility, 67 For best practices and 100 for SEO
+    
     <img src="documentation/lighthouse-result-contact.png" width="200"></p>
 
 
@@ -133,7 +139,7 @@ The website has been tested on Google Chrome, Safari and Firefox and all rendere
     * 3 empty headings found and 2 empty links 
     * <img src="documentation/wave-result.png"></p>
     
-![alt text](documentation/wave-validation.png)
+
 
 ### Solved Bugs
 * Footer bad accessibility
@@ -166,6 +172,6 @@ The steps to clone this project to create a local copy are as follows:
 * C.I Love Running - Help for CSS and Git commands
 
 ### Media
-* Images: [Free Images Website][(https://www.pexels.com/)
+* Images: [Free Images Website](https://www.pexels.com/)
 * Fonts: [Google Fonts website](https://fonts.google.com/)
 * Sale Gif: [Giphy website](https://giphy.com/explore/free)
