@@ -84,7 +84,7 @@ The classes page will allow users to view the yoga studio's classes available.
   There is also a section on how they came across our page, which is not a requirement to choose, but will help with our own data analysis. 
   Below the contact form is another copy of Google Map Section on where the studio is located.
   * When the user clicks the Submit button, they are brought to a Thank You page with a short message confirming their form has been received successfully.
-  * 
+    
  <img src="documentation/thankyou-page-600.png" width="600"></p>
 
 ## Future Features
@@ -112,11 +112,11 @@ The website has been tested on Google Chrome, Safari and Firefox and all rendere
 
   ## Validator Testing
   * HTML
-  * 43 errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/#textarea)
+    43 errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/#textarea)
 
 
   * CSS
-    * 8 errors were returned when passing through the official [Jigsaw validator](https://jigsaw.w3.org/css-validator/)
+    8 errors were returned when passing through the official [Jigsaw validator](https://jigsaw.w3.org/css-validator/)
 
 
   * Lighthouse
