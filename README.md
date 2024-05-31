@@ -50,8 +50,8 @@ I used the Balsamic website to create the wireframe for the yogaworld website. H
 #### Navigation
 The page's navigation Bar is situated at the top of the screen.  It is the same on all pages. It appears on all pages, so the user has no need to use the back button.
   * The Links are situated on the top right of the page and will navigate the user to the Home Page, the Classes Page and the Contact Page.
-    * The active page link has lightgreen background colour for user clarity as to what page they are on at the moment.
-  * The Yogaworld name logo is situated on the top left of the page and is also a link back to the top of the Home Page if clicked.
+  * The active page link has lightgreen background colour for user clarity as to what page they are on at the moment.
+  * The Yogaworld name logo is situated on the top centre of the page and is also a link back to the top of the Home Page if clicked.
 
   * #### Landing Page
 <img src="documentation/landing-page-600.png" width="600"></p>
