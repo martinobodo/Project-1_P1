@@ -1,6 +1,6 @@
 # Yogaworld Website 
 Yogaworld is a fictional Yoga Studio that provides Yoga classes for the people of Jump Village Barnsley. Their motto is to exercise and empower through keeping the body supple. The site's target audience is everyone who wants to join a yoga class, people trying to try new things and those who want to promote better health through exercise. The website is a great place to find information on the studio and book a session 
-![Image of site on mockup generator](documentation/????? > 
+<img src="documentation/mockup1-600.png" width="600"></p>
 ## Table of Contents: 
 * [User Experience](#user-experience-and-interface(UX/UI))
 * [Design](#design )
